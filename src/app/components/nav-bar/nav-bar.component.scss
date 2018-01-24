@@ -1,0 +1,11 @@
+@import '../../../app/styles/variables';
+ul {
+    width: 50%;
+    float: left;
+    .active {
+        border-bottom: 1px solid $electric-light-blue;
+    }
+    img {
+        opacity: 0.5;
+    }
+}

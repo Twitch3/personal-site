@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+@import './app/styles/variables';
+
+body {
+    color: $electric-light-grey;
+    background: $electric-black;
+    height: 100vh;
+    font-family: fantasy;
+    h1, h2, h3, h4, h5, a {
+        color: $electric-light-blue;
+    }
+    a:hover {
+        color: $electric-light-grey;
+    }
+}
