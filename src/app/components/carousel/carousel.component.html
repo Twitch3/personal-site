@@ -1,5 +1,5 @@
 <div class="carousel-container" (mouseenter)="onHover()" (mouseleave)="onMouseOut()">
   <div class="slide-container" [ngStyle]="{'width': slides.length * 100 + '%', 'transform': 'translate3d(-' + currentSlide * 100 / slides.length + '%, 0, 0)' }">
-    <app-slide *ngFor="let slide of slides" [imageURL]="slide.imageURL" [preText]="slide.preText" [mainText]="slide.mainText" [subText]="slide.subText" [numSlides]="slides.length"></app-slide>
+    <app-slide *ngFor="let slide of slides" [imageURL]="slide.imageURL" [routerLink]="slide.routerLink" [preText]="slide.preText" [mainText]="slide.mainText" [subText]="slide.subText" [numSlides]="slides.length"></app-slide>
   </div>
 </div>

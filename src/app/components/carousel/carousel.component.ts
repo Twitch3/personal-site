@@ -7,22 +7,19 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CarouselComponent implements OnInit {
 
-  public slides: any[] = [];
   public currentSlide: number = 0;
 
   @Input()
   public slideInterval: number;
+
+  @Input()
+  public slides: any[];
 
   private slideIntervalFunction: any;
 
   constructor() { }
 
   ngOnInit() {
-    this.slides = [
-      { preText: 'Hello There', mainText: 'Welcome', subText: 'This site is a stomping ground for my personal projects and code samples. Feel free to poke around and explore! There\'s a little something for everyone.' },
-      { imageURL: './assets/images/brachydios_by_bnaha-d6mz5pr.png' },
-      { imageURL: './assets/images/MH3U-Brachydios_Artwork_001.jpg' }
-    ];
     if (!this.slideInterval) {
       this.slideInterval = 5000;
     }

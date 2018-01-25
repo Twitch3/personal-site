@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-slide',
@@ -9,6 +10,9 @@ export class SlideComponent implements OnInit {
 
   @Input()
   imageURL: string;
+
+  @Input()
+  routerLink: string;
 
   @Input()
   preText: string;
@@ -23,12 +27,22 @@ export class SlideComponent implements OnInit {
   numSlides: number;
 
   public fullImageURL: string;
+  public cursorType: string;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     if (this.imageURL) {
       this.fullImageURL = 'url(' + this.imageURL + ')';
+    }
+    if (this.routerLink) {
+      this.cursorType = 'pointer';
+    }
+  }
+
+  public navigateToLink(): void {
+    if (this.routerLink) {
+      this.router.navigate([this.routerLink]);
     }
   }
 
