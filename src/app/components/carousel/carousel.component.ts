@@ -39,6 +39,13 @@ export class CarouselComponent implements OnInit {
   }
 
   public onMouseOut() {
+    clearInterval(this.slideIntervalFunction);
+    this.slideIntervalFunction = setInterval(() => { this.carouselTick(); }, this.slideInterval);
+  }
+
+  public navigateToSlide(index: number) {
+    this.currentSlide = index;
+    clearInterval(this.slideIntervalFunction);
     this.slideIntervalFunction = setInterval(() => { this.carouselTick(); }, this.slideInterval);
   }
 
