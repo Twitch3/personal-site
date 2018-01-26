@@ -1,3 +1,4 @@
+@import '../../../../styles/variables';
 .slide {
     height: 100%;
     float: left;
@@ -8,16 +9,20 @@
     flex-direction: column;
     align-items: center; 
     justify-content: center;
+    &:hover {
+        .background-shader {
+            background-color: rgba($color: #000, $alpha: 0.5);    
+        }
+    }
     .background-shader {
         position: absolute;
         height: 100%;
-        // width: 100%;
-        background-color: rgba($color: #000, $alpha: 0.4);
+        background-color: rgba($color: #000, $alpha: 0.7);
         z-index: 0;
     }
     h1, h2 {
         z-index: 1;
-        width: 70%;
+        width: 70%;        
     }
     h1 {
         padding: 5px;
@@ -30,6 +35,7 @@
         padding: 0;
         margin: 0;
         font-size: 10px;
+        color: $electric-light-grey;    
         &.subText {
             font-size: 20px;
         }

@@ -1,4 +1,4 @@
-<div class="slide" [ngStyle]="{'width': 100 / numSlides + '%', 'background-image': fullImageURL, cursor: cursorType}" (click)="navigateToLink()">
+<div class="slide" [ngStyle]="{'width': 100 / numSlides + '%', 'background-image': fullImageURL, cursor: cursorType}" (click)="navigateToLink()" (mouseover)="setHover(true)" (mouseout)="setHover(false)">
     <div class="background-shader" [ngStyle]="{'width': 100 / numSlides + '%'}"></div>
     <h2 class="preText" *ngIf="preText">{{preText}}</h2>
     <h1 class="mainText" *ngIf="mainText">{{mainText}}</h1>
