@@ -34,19 +34,40 @@ export class CarouselComponent implements OnInit {
     }
   }
 
+  public resetIntervalFunction() {
+    clearInterval(this.slideIntervalFunction);
+    this.slideIntervalFunction = setInterval(() => { this.carouselTick(); }, this.slideInterval);
+  }
+
   public onHover() {
     clearInterval(this.slideIntervalFunction);
   }
 
   public onMouseOut() {
-    clearInterval(this.slideIntervalFunction);
-    this.slideIntervalFunction = setInterval(() => { this.carouselTick(); }, this.slideInterval);
+    this.resetIntervalFunction();
   }
 
   public navigateToSlide(index: number) {
     this.currentSlide = index;
-    clearInterval(this.slideIntervalFunction);
-    this.slideIntervalFunction = setInterval(() => { this.carouselTick(); }, this.slideInterval);
+    this.resetIntervalFunction();
+  }
+
+  public navigateToNextSlide() {
+    if (this.currentSlide === this.slides.length - 1) {
+      this.currentSlide = 0;
+    } else {
+      this.currentSlide++;
+    }
+    this.resetIntervalFunction();
+  }
+
+  public navigateToPreviousSlide() {
+    if (this.currentSlide === 0) {
+      this.currentSlide = this.slides.length - 1;
+    } else {
+      this.currentSlide--;
+    }
+    this.resetIntervalFunction();
   }
 
 }

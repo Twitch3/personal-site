@@ -11,8 +11,15 @@
     }
     .left-arrow,
     .right-arrow {
+        font-size: 20px;
         position: absolute;
         top: 50%;
+        .fa {
+            font-size: 40px;
+        }
+    }
+
+    .left-arrow {
         left: 5px;
     }
 
