@@ -10,6 +10,11 @@ describe('CarouselComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ CarouselComponent ]
     })
+    .overrideComponent(CarouselComponent,  {
+      set: {
+        template: ''
+      }
+    })
     .compileComponents();
   }));
 

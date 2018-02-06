@@ -10,6 +10,11 @@ describe('LandingComponent', () => {
     TestBed.configureTestingModule({
       declarations: [ LandingComponent ]
     })
+    .overrideComponent(LandingComponent, {
+      set: {
+        template: ''
+      }
+    })
     .compileComponents();
   }));
 
