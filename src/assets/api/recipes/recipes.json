@@ -1,0 +1,78 @@
+[
+    {
+        "title":  "Caesar Salad",
+        "mainTag": "vegetable",
+        "tags": [
+            "dinner",
+            "vegetable",
+            "healthy",
+            "salad"
+        ],
+        "ingredients": [
+            {
+                "name": "Romaine Lettuce",
+                "amount": "1-2",
+                "unit": "Heads"
+            },
+            {
+                "name": "Garlic",
+                "amount": "3-4",
+                "unit": "Cloves"
+            },
+            {
+                "name": "Olive Oil",
+                "amount": "1/4",
+                "unit": "Cup"
+            },
+            {
+                "name": "Worcesteshire Sauce",
+                "amount": "Lots of dashes",
+                "unit": ""
+            },
+            {
+                "name": "Lemon Juice",
+                "amount": "1-2",
+                "unit": "Tablespoons"
+            },
+            {
+                "name": "Parmasean Cheese",
+                "amount": "To your liking",
+                "unit": ""
+            }
+        ],
+        "equipment": [
+            {
+                "name": "Large Bowl",
+                "amount": "1"
+            },
+            {
+                "name": "Salad Tongs or Forks for tossing",
+                "amount": "1"
+            },
+            {
+                "name": "Small Microwavable Bowl",
+                "amount": "1"
+            },
+            {
+                "name": "Garlic Press",
+                "amount": "1"
+            },
+            {
+                "name": "Cheese Grater or Microplane Zester for Parmasean",
+                "amount": "1"
+            }
+        ],
+        "directions": [
+            "Press the garlic and place it into the small bowl.",
+            "Pour enough oil over the garlic to just cover it.",
+            "Microwave garlic/oil for 10-15 seconds.",
+            "Cut up the lettuce and place in bowl.",
+            "Pour garlic and oil over the lettuce along with the rest of the 1/4 cup.",
+            "Add the lemon juice to the lettuce along with enough a few healthy glugs of worchesteshire sauce.",
+            "Toss to combine and taste a little. You're looking for the flavor to be a little strong since we haven't added the cheese yet. If you feel it's lacking any flavors: add them, retoss, and retaste.",
+            "Shred/Zest the cheese over the salad. Shred as much as you want, but I'd say you want about enough to cover the entire top of the salad before before you give it one final toss.",
+            "Give it one final taste to make sure it's the desired flavor and serve!"
+        ],
+        "notes": "Pairs well with Italian food or red meat, but I'll eat this salad with any lunch/dinner. You can also add olives/tomatoes/etc if you so wish! The above recipe is just the base model."
+    }
+]

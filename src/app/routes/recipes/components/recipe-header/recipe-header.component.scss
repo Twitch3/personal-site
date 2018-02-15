@@ -1,0 +1,13 @@
+@import '../../../../../app/styles/variables';
+ul {
+    width: 100%;
+    float: left;
+    padding-bottom: 15px;
+    .nav-item {
+        i {
+            font-size: 35px;
+            width: 80px;
+            cursor: pointer;
+        }
+    }
+}
